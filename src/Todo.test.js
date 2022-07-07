@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react';
-import App from './App';
+import Todo from './Todo';
 
 // smoke test
 test('renders without crashing', () => {
-  render(<App />);
+  render(<Todo />);
 });
 
 // snapshop test
 test ('matches snapshot', () => {
-  const {asFragment} = render(<App/>);
+  const {asFragment} = render(<Todo/>);
   expect(asFragment()).toMatchSnapshot();
 })
